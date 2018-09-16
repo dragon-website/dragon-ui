@@ -3,7 +3,47 @@ import {Col, Grid, Image, Row} from 'react-bootstrap';
 import {Button, Jumbotron} from 'react-bootstrap';
 import {LinkContainer} from 'react-router-bootstrap';
 
-export default class Home extends React.Component {
+import {Props as ItemProps} from './SimulationItem';
+import SimulationList from './SimulationList';
+import Title from './Title';
+
+interface State {
+  lastestSims: ItemProps[];
+  popularSims: ItemProps[];
+}
+
+export default class Home extends React.Component<object, State> {
+  public constructor() {
+    super(Object);
+    this.state = {
+      lastestSims: [],
+      popularSims: [],
+    }
+  }
+
+  public componentDidMount() {
+    var item: ItemProps = {
+      id: 1,
+      title: "D1-R7-IMF93",
+      profile: "sss",
+      imf: "sss",
+      kick_ns: "sss",
+      publish_time: "sss",
+      q: "sss",
+      rh: "aaa",
+      rt: "sss",
+    }
+    const sims = [
+      item,
+      item,
+      item,
+    ];
+    this.setState({
+      lastestSims: sims,
+      popularSims: sims,
+    });
+  }
+
   public render() {
     return (
       <Grid>
@@ -28,6 +68,10 @@ export default class Home extends React.Component {
             </LinkContainer>
           </p>
         </Jumbotron>
+        <Title>Latest Simulations</Title>
+        <SimulationList sims={this.state.lastestSims}/>
+        <Title>Most popular Simulations</Title>
+        <SimulationList sims={this.state.popularSims}/>
       </Grid>
       );
   }

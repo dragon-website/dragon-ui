@@ -1,16 +1,13 @@
 import * as React from 'react';
 import {Col, Grid, Image, Row} from 'react-bootstrap';
 
+import Title from './Title';
+
 export default class About extends React.Component {
   public render() {
     return (
       <Grid>
-        <Row className="form-group">
-          <Col xs={6} xsOffset={3} md={2} mdOffset={5}>
-            <h3>Our Team</h3>
-            <hr/>
-          </Col>
-        </Row>
+        <Title>Our Team</Title>
         <Row className="form-group">
           <Col xs={5} xsOffset={3} md={2} mdOffset={3}>
             <Image src="./images/about/u492.png" rounded={true} responsive={true}/>
@@ -97,12 +94,7 @@ export default class About extends React.Component {
         <br/>
         <br/>
         <br/>
-        <Row className="form-group">
-          <Col xs={10} xsOffset={1} md={6} mdOffset={3}>
-            <h3>List of International Teams</h3>
-            <hr/>
-          </Col>
-        </Row>
+        <Title>List of International Teams</Title>
         <Row>
           <p>
             In the following we will list all teams who have explicitly confirmed their interest in
@@ -122,13 +114,8 @@ export default class About extends React.Component {
         <br/>
         <br/>
         <br/>
-        <Row className="form-group">
-          <Col xs={8} xsOffset={2} md={2} mdOffset={5}>
-            <h3>concat us</h3>
-            <hr/>
-            <p>Email:  xxxxx@xxxx</p>
-          </Col>
-        </Row>
+        <Title>contact us</Title>
+        <p className="text-center">Email: xxxx@xxxx</p>
       </Grid>
     );
   }
