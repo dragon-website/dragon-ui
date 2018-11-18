@@ -19,6 +19,7 @@
     "test": "react-scripts-ts test --env=jsdom",
     "eject": "react-scripts-ts eject"
   },
+  "proxy": "http://dragon.mnlm1991.top:9999/",
   "devDependencies": {
     "@types/jest": "^23.3.2",
     "@types/node": "^10.9.4",

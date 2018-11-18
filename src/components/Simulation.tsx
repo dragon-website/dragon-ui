@@ -18,27 +18,13 @@ class Simulation extends React.Component<Props, State> {
     };
   }
   public componentDidMount() {
-    var item: ItemProps = {
-      id: 1,
-      title: "D1-R7-IMF93",
-      profile: "sss",
-      imf: "sss",
-      kick_ns: "sss",
-      publish_time: "sss",
-      q: "sss",
-      rh: "aaa",
-      rt: "sss",
-    }
-    const sims = [
-      item,
-      item,
-      item,
-      item,
-      item,
-    ];
-    this.setState({
-      sims: sims,
-    });
+    fetch("/api/simulations/list/all").then(response => {
+      response.json().then(json => {
+        this.setState({
+          sims: json.data,
+        });
+      });
+    })
   }
   public render() {
     return (

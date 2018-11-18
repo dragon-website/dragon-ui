@@ -28,6 +28,11 @@ const Simulation = Loadable({
   loading: Loading,
 })
 
+const SimulationDetail = Loadable({
+  loader: () => import('./components/SimulationDetail'),
+  loading: Loading,
+})
+
 class App extends React.Component {
   public render() {
     return (
@@ -62,7 +67,8 @@ class App extends React.Component {
           </Navbar>
           <Route exact={true} path="/" component={Home}/>
           <Route path="/about" component={About}/>
-          <Route path="/simulation" component={Simulation}/>
+          <Route exact={true} path="/simulation" component={Simulation}/>
+          <Route path="/simulation/:id" component={SimulationDetail}/>
         </div>
       </Router>
     );

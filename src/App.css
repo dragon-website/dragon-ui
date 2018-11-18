@@ -27,13 +27,6 @@
   to { transform: rotate(360deg); }
 }
 
-h3 {
-  text-align: center;
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-}
-
 p {
   margin-bottom: 0;
 }

@@ -1,15 +1,17 @@
+/* parent */
 .Title div {
   display: inline-block;
-}
-
-.Title p {
-  display: flex;
 }
 
 .Title h3 {
   margin-left: 25px;
   margin-right: 25px;
   margin-bottom: 10px;
+}
+
+/* hr parent */
+.Title p {
+  display: flex;
 }
 
 .Title hr {

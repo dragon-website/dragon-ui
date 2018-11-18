@@ -22,25 +22,19 @@ export default class Home extends React.Component<object, State> {
   }
 
   public componentDidMount() {
-    var item: ItemProps = {
-      id: 1,
-      title: "D1-R7-IMF93",
-      profile: "sss",
-      imf: "sss",
-      kick_ns: "sss",
-      publish_time: "sss",
-      q: "sss",
-      rh: "aaa",
-      rt: "sss",
-    }
-    const sims = [
-      item,
-      item,
-      item,
-    ];
-    this.setState({
-      lastestSims: sims,
-      popularSims: sims,
+    fetch("/api/simulations/list/latest").then(response => {
+      response.json().then(json => {
+        this.setState({
+          lastestSims: json.data,
+        });
+      });
+    })
+    fetch("/api/simulations/list/popular").then(response => {
+      response.json().then(json => {
+        this.setState({
+          popularSims: json.data,
+        });
+      });
     });
   }
 

@@ -17,7 +17,7 @@ class SimulationItem extends React.Component<Props> {
   public render() {
     return (
       <Col md={3}>
-        <h2>{this.props.title}</h2>
+        <h2><a href={"./simulation/" + this.props.id.toString()}>{this.props.title}</a></h2>
         <p>
           <span>Pub date: {this.props.publish_time}</span>
         </p>
