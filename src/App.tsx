@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {Nav, Navbar, NavItem} from 'react-bootstrap';
+import {Nav, Navbar, NavItem, Image} from 'react-bootstrap';
 import {LinkContainer} from 'react-router-bootstrap';
 import {
     BrowserRouter as Router,
@@ -40,9 +40,9 @@ class App extends React.Component {
         <div className="App container">
           <Navbar inverse={true} collapseOnSelect={true} fixedTop={true} >
             <Navbar.Header>
-              <Navbar.Brand>
-                <a href="/">Dragon</a>
-              </Navbar.Brand>
+              <a href="/">
+                <Image src={process.env.PUBLIC_URL + "/images/index/logo.png"} height="50"></Image>
+              </a>
               <Navbar.Toggle />
             </Navbar.Header>
             <Navbar.Collapse>

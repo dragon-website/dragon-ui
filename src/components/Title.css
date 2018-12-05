@@ -1,5 +1,5 @@
 /* parent */
-.Title div {
+.Title .parent {
   display: inline-block;
 }
 
@@ -10,7 +10,7 @@
 }
 
 /* hr parent */
-.Title p {
+.Title .child {
   display: flex;
 }
 

@@ -7,9 +7,9 @@ class Title extends React.Component<object, object, string> {
   public render() {
     return (
       <Row className="text-center Title">
-        <div>
+        <div className="parent">
           <h3>{this.props.children}</h3>
-          <p><hr/></p>
+          <div className="child"><hr/></div>
         </div>
       </Row>
     );

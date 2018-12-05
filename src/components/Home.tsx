@@ -13,8 +13,8 @@ interface State {
 }
 
 export default class Home extends React.Component<object, State> {
-  public constructor() {
-    super(Object);
+  public constructor(props: Object, state: State) {
+    super(props, state);
     this.state = {
       lastestSims: [],
       popularSims: [],
@@ -45,15 +45,17 @@ export default class Home extends React.Component<object, State> {
           <Row>
             <Col md={9}>
               <p>
-                The simulations carried out using NBODY6++GPU as part of the international DRAGON project (link to http://silkroad.bao.ac.cn/dragon/) set a new standard in globular cluster modeling. They have been possible after significant improvements of the simulation software on the laohu supercomputer of the Center of Information and Computing at National Astronomical Observatories, Chinese Academy of Sciences. The code has excellent parallel performance using, simultaneously, multi-node parallelization, OpenMP on the nodes and general-purpose Kepler K20 graphic cards acceleration (GPGPUs) to compute the gravitational forces between the stars. A typical Dragon star cluster simulation used 8 nodes (containing 16 GPUs) with 160 CPU cores and about 32k GPU threads, a wall clock time of order 650 hours per Gyr.
+                Direct N-body simulations, where N is the number of stars in a star cluster, represent the most powerful tool to study globular cluster evolution. They allow following the evolution of many stars as gravitating particles directly, resolving their orbits in the cluster, their interactions with other objects, their stellar evolution, mass and radius changes, direct collisions and mergers. To properly resolve the secular relaxation processes in the cluster a high resolution in time and space is required, and direct N-body codes such as the NBODY code family originally developed by Aarseth are the best compromise between performance and accuracy. Asymptotically the computational time required scales with N2, for each orbital time scale resolved, and with an even higher power of N (less than 3) per physical (relaxation) time scale. Only the use of GRAPE accelerator hardware in the 90’s and the current use of graphical processing units (GPU) in parallel in large supercomputers has made it possible to reach a million-body simulation, the first realistic direct simulation of a globular cluster using our NBODY6++GPU code (named the <strong>DRAGON</strong> simulations [Want et al. 2016, see also <a href="http://silkroad.bao.ac.cn/dragon/" target="_blanck">http://silkroad.bao.ac.cn/dragon/</a> ]). Roughly speaking, the use of more parallel nodes with GPUs compensates one power of N when increasing the particle number.
               </p>
               <p>
-                The DRAGON simulations exhibit a large number of central black holes – remnants of massive stars with masses of ten to fifty solar masses – they form a dense nuclear cluster in the center of the system (Fig. 3, panel with white background); we also prepare synthetic color magnitude diagrams (CMD) from the simulations as e.g. observed by the Hubble Space Telescope. The top panel of Fig. 4 shows a CMD with zero photometric errors and infinite sensitivity, revealing the ultimate quality of observations with the supercomputer. To obtain these data the Cambridge stellar evolution codes (an integral feature of NBODY6++GPU) and COCOA, a software package for synthetic photometry of our Polish collaborators from Nicolaus Copernicus Astronomical Center have been used (see Wang et al. 2016). For the lower panel of Fig. 4 a typical distance to a Galactic globular cluster has been assumed and the specification of the cameras on board the Hubble space telescope using COCOA.
+                The DRAGON simulation provides a computational analysis which provides a context for analysis of FAST observation. The Drift-scan pulsar surveys of FAST has carried out to searching for pulsars in globular clusters. The DRAGON simulations can in particular, predict the physical and kinematic properties of neutron stars / pulsars for different stellar environments and different primordial binary distributions in the model. These can then be predicted to sets of pulsar observations obtained by <strong>FAST</strong>. Pulsars with the fastest spins are youngest [25]; these pulsars are likely in, or were recently ejected from, the high—density stellar environments that are amongst the objects of our numerical investigation.
+              </p>
+              <p>
+                The wealth of the DRAGON simulation data shall be public and benefit all astronomers, such that every interested team (especially observational) can access the data and observe our simulated star cluster models as if it were using a real telescope.
               </p>
             </Col>
             <Col md={3}>
-              <Image src="./images/index/u202.jpg" responsive={true}/>
-              <Image src="./images/index/u204.jpg" responsive={true}/>
+              <Image src="./images/index/home.jpg" responsive={true}/>
             </Col>
           </Row>
           <p className="text-center">

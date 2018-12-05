@@ -10,7 +10,7 @@ export interface Props {
   q: string;
   kick_ns: string;
   rt: string;
-  publish_time: string;
+  publish_date: string;
 }
 
 class SimulationItem extends React.Component<Props> {
@@ -19,7 +19,7 @@ class SimulationItem extends React.Component<Props> {
       <Col md={3}>
         <h2><a href={"./simulation/" + this.props.id.toString()}>{this.props.title}</a></h2>
         <p>
-          <span>Pub date: {this.props.publish_time}</span>
+          <span>Pub date: {this.props.publish_date}</span>
         </p>
         <p>
           <span>Profile: {this.props.profile}</span>
