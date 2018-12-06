@@ -10,7 +10,7 @@ export default class About extends React.Component {
       <Grid>
         <Title>Our Team</Title>
         <Row className="form-group row-eq-height">
-          <Col xs={5} xsOffset={3} md={2} mdOffset={3} className="vertical-center">
+          <Col xs={6} xsOffset={3} md={2} mdOffset={3} className="vertical-center">
             <Image src="./images/about/Rainer-Spurzem.png" rounded={true} responsive={true}/>
           </Col>
           <Col xs={12} xsOffset={0} md={6} mdOffset={0} className="vertical-center">
@@ -23,22 +23,21 @@ export default class About extends React.Component {
           </Col>
         </Row>
         <Row className="row-eq-height">
-          <Col xs={5} xsOffset={3} md={2} mdOffset={0} className="vertical-center">
+          <Col xs={6} xsOffset={3} md={2} mdOffset={0} className="vertical-center">
             <Image src="./images/about/Peter-Berczik.png" rounded={true} responsive={true} />
           </Col>
-          <Col xs={12} md={4} className="vertical-center">
+          <Col xs={12} md={4} mdOffset={0} className="vertical-center">
             <div>
-            <p><strong>Dr. Peter Berczik</strong></p>
-            <p><strong>Position:</strong> Senior Silk Road Project Postdoc NAOC PIFI International Fellow at Main Astronomical Observatory,   NASU</p>
-            <p><strong>Research interest:</strong> N-body, SPH, chemodynamical modelling of galaxies, galactic centre dynamics, star cluster evolution. SMBBH & SMSBH evolution in the GC, Post-Newtonian dynamics; AD dynamics around SMBH’s.</p>
-            <p><strong>Contact:</strong> berczik_at_ari.uni-heidelberg.de</p>
-          </div>
+              <p><strong>Dr. Peter Berczik</strong></p>
+              <p><strong>Position:</strong> Senior Silk Road Project Postdoc NAOC PIFI International Fellow at Main Astronomical Observatory,   NASU</p>
+              <p><strong>Research interest:</strong> N-body, SPH, chemodynamical modelling of galaxies, galactic centre dynamics, star cluster evolution. SMBBH & SMSBH evolution in the GC, Post-Newtonian dynamics; AD dynamics around SMBH’s.</p>
+              <p><strong>Contact:</strong> berczik_at_ari.uni-heidelberg.de</p>
+            </div>
           </Col>
-          <Col xs={5} xsOffset={3} md={2} mdOffset={0} className="vertical-center">
+          <Col xs={6} xsOffset={3} md={2} mdOffset={0} className="vertical-center">
             <Image src="./images/about/Thijs.png" rounded={true} responsive={true} />
           </Col>
-
-          <Col xs={12} md={4} className="vertical-center">
+          <Col xs={12} md={4} mdOffset={0} className="vertical-center">
             <div>
               <p><strong>Dr. M.B.N. (Thijs) Kouwenhoven</strong></p>
               <p><strong>Position:</strong> Senior Associate Professor at the Department of Mathematical Sciences at Xi'an Jiaotong-Liverpool University (XJTLU) in Suzhou, China.  Director of the International Astronomical Union East-Asia Regional Office of Astronomy for Development </p>
@@ -46,9 +45,10 @@ export default class About extends React.Component {
               <p><strong>Contact:</strong> t.kouwenhoven_at_xjtlu.edu.cn</p>
             </div>
           </Col>
+
         </Row>
         <Row className="row-eq-height">
-          <Col xs={5} xsOffset={3} md={2} mdOffset={0} className="vertical-center">
+          <Col xs={6} xsOffset={3} md={2} mdOffset={0} className="vertical-center">
             <Image src="./images/about/Li-Shuo.png" rounded={true} responsive={true} />
           </Col>
           <Col xs={12} md={4} className="vertical-center">
@@ -59,7 +59,7 @@ export default class About extends React.Component {
               <p><strong>Contact:</strong> lishuo_at_nao.cas.cn</p>
             </div>
           </Col>
-          <Col xs={5} xsOffset={3} md={2} mdOffset={0} className="vertical-center">
+          <Col xs={6} xsOffset={3} md={2} mdOffset={0} className="vertical-center">
             <Image src="./images/about/Xiaoying-Pang.png" rounded={true} responsive={true} />
           </Col>
 
@@ -73,7 +73,7 @@ export default class About extends React.Component {
           </Col>
         </Row>
         <Row className="row-eq-height">
-          <Col xs={5} xsOffset={3} md={2} mdOffset={0} className="vertical-center">
+          <Col xs={6} xsOffset={3} md={2} mdOffset={0} className="vertical-center">
             <Image src="./images/about/Long-Wang.png" rounded={true} responsive={true} />
           </Col>
           <Col xs={12} md={4} className="vertical-center">
@@ -84,7 +84,7 @@ export default class About extends React.Component {
               <p><strong>Contact:</strong> longwang.astro_at_gmail.com</p>
             </div>
           </Col>
-          <Col xs={5} xsOffset={3} md={2} sm={2} mdOffset={0} className="vertical-center">
+          <Col xs={6} xsOffset={3} md={2} sm={2} mdOffset={0} className="vertical-center">
             <Image src="./images/about/Jongsuk-Hong.png" rounded={true} responsive={true} />
           </Col>
 
@@ -97,7 +97,7 @@ export default class About extends React.Component {
           </Col>
         </Row>
         <Row className="row-eq-height">
-          <Col xs={5} xsOffset={3} md={2} mdOffset={0} className="vertical-center">
+          <Col xs={6} xsOffset={3} md={2} mdOffset={0} className="vertical-center">
             <Image src="./images/about/Xie-Dan.png" rounded={true} responsive={true} />
           </Col>
           <Col xs={12} md={4} className="vertical-center">

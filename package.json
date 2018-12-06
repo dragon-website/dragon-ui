@@ -22,7 +22,8 @@
   },
   "proxy": {
     "/api|upload": {
-      "target": "http://dragon.mnlm1991.top/"
+      "target": "https://dragon.china-vo.org/",
+      "secure": false
     }
   },
   "devDependencies": {

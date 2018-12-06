@@ -1,7 +1,9 @@
 .vertical-center {
   display: flex;
-  align-items: center;/*垂直居中*/
-  margin-top: 35px;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  margin-right: -.3px; /* for fix safiri flex bug */
 }
 .row-eq-height {
   display: flex;
