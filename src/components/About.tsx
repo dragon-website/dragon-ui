@@ -107,6 +107,16 @@ export default class About extends React.Component {
               <p>Responsible for developing website</p>
             </div>
           </Col>
+          <Col xs={6} xsOffset={3} md={2} mdOffset={0} className="vertical-center">
+            <Image src="./images/about/jijia.jpg" rounded={true} responsive={true} />
+          </Col>
+          <Col xs={12} md={4} className="vertical-center">
+            <div>
+              <p><strong>Jijia Lai</strong></p>
+              <p>Alibaba Senior UX Designer</p>
+              <p>Responsible for branding design</p>
+            </div>
+          </Col>
         </Row>
         <Title>List of International Teams</Title>
         <Row>
