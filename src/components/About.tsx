@@ -46,8 +46,6 @@ export default class About extends React.Component {
             </div>
           </Col>
 
-        </Row>
-        <Row className="row-eq-height">
           <Col xs={6} xsOffset={3} md={2} mdOffset={0} className="vertical-center">
             <Image src="./images/about/Li-Shuo.png" rounded={true} responsive={true} />
           </Col>
@@ -71,8 +69,6 @@ export default class About extends React.Component {
               <p><strong>Contact:</strong> xypang_at_bao.cas.cn</p>
             </div>
           </Col>
-        </Row>
-        <Row className="row-eq-height">
           <Col xs={6} xsOffset={3} md={2} mdOffset={0} className="vertical-center">
             <Image src="./images/about/Long-Wang.png" rounded={true} responsive={true} />
           </Col>
@@ -95,8 +91,29 @@ export default class About extends React.Component {
               <p><strong>Research interest:</strong> stellar dynamics, numerical simulations on globular clusters, black hole binary mergers with gravitational waves, cataclysmic variables and other X-ray binaries, multiple populations and blue straggler stars.  </p>
             </div>
           </Col>
-        </Row>
-        <Row className="row-eq-height">
+          <Col xs={6} xsOffset={3} md={2} sm={2} mdOffset={0} className="vertical-center">
+            <Image src="./images/about/Qi-Shu.png" rounded={true} responsive={true} />
+          </Col>
+
+          <Col xs={12} md={4} className="vertical-center">
+            <div>
+              <p><strong>Qi Shu</strong></p>
+              <p><strong>Position:</strong> Ph.D. student in Kavli Institute of Astronomy and Astrophysics in Peking University</p>
+              <p><strong>Research interest:</strong> Nbody simulation and Planetary Systems in Star Clusters</p>
+            </div>
+          </Col>
+          <Col xs={6} xsOffset={3} md={2} sm={2} mdOffset={0} className="vertical-center">
+            <Image src="./images/about/Francesco-Flammini.png" rounded={true} responsive={true} />
+          </Col>
+
+          <Col xs={12} md={4} className="vertical-center">
+            <div>
+              <p><strong>Francesco Flammini</strong></p>
+              <p><strong>Position:</strong> Ph.D Student at the Department of Mathematical Sciences of Xi'an Jiaotong-Liverpool University (XJTLU)</p>
+              <p><strong>Research interest:</strong> Planetary system in star cluster</p>
+            </div>
+          </Col>
+
           <Col xs={6} xsOffset={3} md={2} mdOffset={0} className="vertical-center">
             <Image src="./images/about/Xie-Dan.png" rounded={true} responsive={true} />
           </Col>
